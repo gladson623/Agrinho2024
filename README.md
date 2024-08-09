@@ -63,7 +63,7 @@ Certifique-se de manter seu navegador atualizado para garantir o melhor desempen
 
 Para visualizar o site, basta acessar o seguinte link:
 
-[Site de Saneamento Básico](https://gladson623.github.io/Agrinho2024/)
+[Site AgroFuturo](https://gladson623.github.io/Agrinho2024/)
 
 Navegue pelas diferentes seções para explorar o conteúdo sobre a evolução da tecnologia no campo.
 
