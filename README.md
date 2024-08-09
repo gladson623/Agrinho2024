@@ -14,7 +14,7 @@ O site é organizado da seguinte maneira:
 
 - **História**: Página que detalha a evolução tecnológica agrícola ao longo dos anos. Apresenta uma visão geral das principais inovações, como a Revolução Agrícola, Mecanização e Era Digital, em uma grid de conteúdo.
 
-- **Animação**: Seção interativa que permite aos usuários experimentar uma animação de plantio. Inclui um checkbox para iniciar a animação e efeitos visuais representando chuva e crescimento de plantas. Contém também um carrossel de imagens e modais para visualização detalhada.
+- **Animação**: Seção interativa que permite aos usuários experimentar uma animação de plantio. Inclui um checkbox para iniciar a animação e efeitos visuais representando chuva e crescimento de plantas.
 
 - **Galeria de Imagens**: Seção que exibe uma galeria de imagens com um carrossel interativo. Inclui modais para visualização ampliada das imagens.
 

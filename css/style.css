@@ -915,6 +915,7 @@ input[type="checkbox"]:checked~* .faq-item {
     background-clip: text;
     animation: titleColor 10s linear infinite;
     background-size: 500%;
+    padding-bottom: 0.625rem;
 }
 
 
