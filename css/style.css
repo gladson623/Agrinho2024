@@ -40,7 +40,7 @@ h2 {
     color: var(--color-primary);
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 a.active {
@@ -59,14 +59,14 @@ ul {
 
 header {
     background-color: var(--color-primary);
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     align-items: center;
     justify-content: space-between;
     display: flex;
 }
 
 .menu ul {
-    margin-right: 80px;
+    margin-right: 5rem;
 }
 
 .menu ul li {
@@ -74,10 +74,10 @@ header {
 }
 
 .menu ul li a {
-    padding: 10px 20px;
-    margin: 0 5px;
+    padding: 0.625rem 1.25rem;
+    margin: 0 0.3125rem;
     background-color: var(--color-primary);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     display: block;
 }
 
@@ -92,7 +92,7 @@ main {
 
 footer {
     background-color: var(--color-primary);
-    padding: 20px 0;
+    padding: 1.25rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -104,18 +104,18 @@ footer div p {
 }
 
 footer div {
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 footer div:nth-child(2) {
-    border: 1px solid gray;
+    border: 0.0625rem solid gray;
     border-top: 0;
     border-bottom: 0;
     height: 100%;
 }
 
 .rodape ul li {
-    padding: 5px 0;
+    padding: 0.3125rem 0;
 }
 
 .intro-section p {
@@ -123,12 +123,12 @@ footer div:nth-child(2) {
 }
 
 section {
-    padding: 20px;
-    margin: 0 20px;
-    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 0 1.25rem;
+    border-radius: 0.5rem;
     transition: transform 0.3s ease-in-out;
     background-color: rgba(226, 226, 226, 0.863);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .faq-section {
@@ -142,7 +142,7 @@ p {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .content-grid,
@@ -150,13 +150,13 @@ img {
 .testimonials-grid,
 .content-grid-animate {
     display: grid;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .content-grid,
 .content-grid-animate {
-    margin-top: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 0.625rem;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
 }
 
 
@@ -164,8 +164,8 @@ img {
 .testimonial-item,
 .faq-item {
     background-color: var(--color-light);
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
     z-index: 2;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -175,11 +175,11 @@ img {
 .faq-item:hover,
 .gallery-grid img:hover {
     transform: scale(1.01);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     position: relative;
     z-index: 10;
 }
@@ -187,14 +187,14 @@ img {
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .pricing-table th,
 .pricing-table td {
-    padding: 15px;
+    padding: 0.9375rem;
     text-align: center;
-    border: 1px solid #333;
+    border: 0.0625rem solid #333;
 }
 
 .pricing-table td {
@@ -203,9 +203,9 @@ img {
 
 .header nav {
     background-color: var(--color-primary);
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
 }
 
 .header .mobile-icon {
@@ -276,21 +276,21 @@ img {
 
 .header .mobile-btn:checked~.mobile-icon .hamburguer:before {
     transform: translateY(4.7rem);
-    left: calc(100vw - 159px);
+    left: calc(100vw - 9.9375rem);
     width: 4rem;
     pointer-events: none;
 }
 
 .header .mobile-btn:checked~.mobile-icon * .hamburguer2:before {
     transform: translateY(1.6rem);
-    left: calc(100vw - 140px);
+    left: calc(100vw - 8.75rem);
     width: 2.69rem;
     pointer-events: none;
 }
 
 .header .mobile-btn:checked~.mobile-icon .hamburguer:after {
     transform: translateY(7.7rem);
-    left: calc(100vw - 135px);
+    left: calc(100vw - 8.4375rem);
     width: 2.5rem;
     pointer-events: none;
 }
@@ -332,8 +332,8 @@ header.header nav ul {
 
 .check {
     position: absolute;
-    top: 20px;
-    left: calc(100% - 80px);
+    top: 1.25rem;
+    left: calc(100% - 5rem);
     width: 3.75rem;
     height: 1.875rem;
     cursor: pointer;
@@ -420,16 +420,16 @@ input[type="checkbox"]:checked~* .faq-item {
 
 
 .content-grid-animate {
-    padding: 10px;
+    padding: 0.625rem;
     position: relative;
-    height: 700px;
+    height: 43.75rem;
 
 }
 
 .animation-rain {
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 2px solid #bebebe;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+    border: 0.125rem solid #bebebe;
 
     background-color: rgb(104, 104, 255);
 }
@@ -441,22 +441,22 @@ input[type="checkbox"]:checked~* .faq-item {
 
 .nuvem {
     background-color: white;
-    width: 320px;
-    height: 100px;
-    border-radius: 100px;
-    margin-top: 100px
+    width: 20rem;
+    height: 6.25rem;
+    border-radius: 6.25rem;
+    margin-top: 6.25rem
 }
 
 .nuvem::before {
     content: '';
     position: absolute;
-    top: 50px;
-    left: 40px;
+    top: 3.125rem;
+    left: 2.5rem;
     background-color: white;
-    height: 110px;
-    width: 110px;
+    height: 6.875rem;
+    width: 6.875rem;
     border-radius: 50%;
-    box-shadow: 90px 0 0 30px white;
+    box-shadow: 5.625rem 0 0 1.875rem white;
 }
 
 .chuva {
@@ -498,20 +498,20 @@ input[type="checkbox"]:checked~* .faq-item {
 
 .chuva span {
     background-color: #a4a4df;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin: 0 0.125rem;
     border-radius: 50%;
     animation: chuva 5s linear infinite;
     animation-duration: calc(90s / var(--i));
-    transform: translateY(-260px) scale(0);
+    transform: translateY(-16.25rem) scale(0);
 
 }
 
 .glass {
     background-color: green;
     width: 100%;
-    height: 160px;
+    height: 10rem;
     position: relative;
     z-index: 3;
 }
@@ -520,7 +520,7 @@ input[type="checkbox"]:checked~* .faq-item {
 .plant1,
 .plant2 {
     position: relative;
-    top: 140px;
+    top: 8.75rem;
     height: 0;
     width: 70%;
     margin: auto;
@@ -532,10 +532,10 @@ input[type="checkbox"]:checked~* .faq-item {
     content: '';
     display: block;
     position: relative;
-    top: -249px;
-    width: 10px;
-    height: 100px;
-    left: calc(50% - 5px);
+    top: -15.5625rem;
+    width: 0.625rem;
+    height: 6.25rem;
+    left: calc(50% - 0.3125rem);
     background-color: rgb(24, 182, 3);
     z-index: 1;
 }
@@ -546,14 +546,14 @@ input[type="checkbox"]:checked~* .faq-item {
     content: '';
     display: block;
     position: relative;
-    top: -495px;
-    width: 10px;
-    height: 50px;
-    left: calc(50% - 5px);
-    transform: translateX(4px) rotate(5deg);
+    top: -30.9375rem;
+    width: 0.625rem;
+    height: 3.125rem;
+    left: calc(50% - 0.3125rem);
+    transform: translateX(0.25rem) rotate(5deg);
     background-color: rgb(197, 194, 9);
     border-radius: 40%;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     z-index: 1;
 }
 
@@ -577,24 +577,24 @@ input[type="checkbox"]:checked~* .faq-item {
     content: '';
     display: block;
     position: relative;
-    top: -392px;
-    width: 10px;
-    height: 50px;
-    left: calc(50% - 5px);
-    transform: translateY(2px) translateX(-4px) rotate(-5deg);
+    top: -24.5rem;
+    width: 0.625rem;
+    height: 3.125rem;
+    left: calc(50% - 0.3125rem);
+    transform: translateY(0.125rem) translateX(-0.25rem) rotate(-5deg);
     background-color: rgb(197, 194, 9);
     border-radius: 40%;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     z-index: 2;
 
 }
 
 .plant1 {
-    transform: translateX(-54px) rotate(-5deg);
+    transform: translateX(-3.375rem) rotate(-5deg);
 }
 
 .plant2 {
-    transform: translateX(54px) rotate(5deg);
+    transform: translateX(3.375rem) rotate(5deg);
 }
 
 .plant div::after,
@@ -603,37 +603,37 @@ input[type="checkbox"]:checked~* .faq-item {
     content: '';
     display: block;
     position: relative;
-    top: -445px;
-    width: 10px;
-    height: 50px;
-    left: calc(50% - 5px);
+    top: -27.8125rem;
+    width: 0.625rem;
+    height: 3.125rem;
+    left: calc(50% - 0.3125rem);
     background-color: rgb(197, 194, 9);
     border-radius: 40%;
     z-index: 1;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
 }
 
 
 
 .seed {
     position: relative;
-    bottom: -550px;
+    bottom: -34.375rem;
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
     background-color: rgb(128, 57, 0);
     border-radius: 50% 50% 0% 50%;
     transform: rotate(45deg);
-    left: calc(50% - 25px);
+    left: calc(50% - 1.5625rem);
     cursor: pointer;
     z-index: 2;
 }
 
 .seed p {
-    transform: rotate(-45deg) translateY(-80px) translateX(3px);
+    transform: rotate(-45deg) translateY(-5rem) translateX(0.1875rem);
     color: var(--color-yellow);
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 #seed:checked~.seed {
@@ -694,7 +694,7 @@ input[type="checkbox"]:checked~* .faq-item {
     border-radius: 0.25rem;
     position: relative;
     width: 50%;
-    max-width: 800px;
+    max-width: 50rem;
     background: var(--color-white);
     padding: 1.5em;
     box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
@@ -702,7 +702,7 @@ input[type="checkbox"]:checked~* .faq-item {
 
 
 .modal_item div {
-    margin: 20px 0px;
+    margin: 1.25rem 0rem;
 }
 
 .close {
@@ -733,28 +733,28 @@ input[type="checkbox"]:checked~* .faq-item {
 }
 
 .text-changer {
-    min-height: 100px;
+    min-height: 6.25rem;
     display: flex;
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 .text-changer::before {
     content: '';
     animation: changertxt 20s ease-in-out infinite;
     color: black;
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin: auto;
 }
 
 .sun {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     background-color: var(--color-yellow);
     border-radius: 50%;
-    box-shadow: 0px 0px 20px var(--color-yellow);
+    box-shadow: 0rem 0rem 1.25rem var(--color-yellow);
     position: relative;
-    left: calc(50% - 50px);
-    top: 100px;
+    left: calc(50% - 3.125rem);
+    top: 6.25rem;
     transition: box-shadow 3s;
 }
 
@@ -773,8 +773,8 @@ input[type="checkbox"]:checked~* .faq-item {
     display: flex;
     justify-content: center;
     background-color: yellowgreen;
-    font-size: 20px;
-    padding: 10px 0;
+    font-size: 1.25rem;
+    padding: 0.625rem 0;
 
 }
 
@@ -783,25 +783,25 @@ input[type="checkbox"]:checked~* .faq-item {
 
 #seed:checked~* .thunder-container:nth-child(2) {
     position: absolute;
-    top: 210px;
-    left: calc(50% - 60px);
+    top: 13.125rem;
+    left: calc(50% - 3.75rem);
 
 }
 
 #seed:checked~* .thunder-container {
     position: absolute;
-    top: 210px;
-    left: calc(50% - 5px);
+    top: 13.125rem;
+    left: calc(50% - 0.3125rem);
 
 }
 
 #seed:checked~* .thunder-container .thunder1 {
     background: none;
-    width: 15px;
-    height: 30px;
+    width: 0.9375rem;
+    height: 1.875rem;
     position: relative;
-    left: 18px;
-    top: -5px;
+    left: 1.125rem;
+    top: -0.3125rem;
     transform: skew(-45deg);
     animation: flash 3s linear forwards;
 
@@ -809,11 +809,11 @@ input[type="checkbox"]:checked~* .faq-item {
 
 #seed:checked~* .thunder-container .thunder2 {
     background: none;
-    width: 15px;
-    height: 40px;
+    width: 0.9375rem;
+    height: 2.5rem;
     position: relative;
-    top: -10px;
-    left: 2px;
+    top: -0.625rem;
+    left: 0.125rem;
     transform: skew(-45deg);
     animation: flash 3s linear forwards;
 }
@@ -890,13 +890,16 @@ input[type="checkbox"]:checked~* .faq-item {
 
 
 
-.highlight::before,
-.highlight::after {
-    background-image: url(../imagens/imagem1.png);
+.highlight1::before,
+.highlight1::after {
+    background-image: url(../imagens/gladson.png);
 }
 
 
-
+.highlight2::before,
+.highlight2::after {
+    background-image: url(../imagens/milenio.jpeg);
+}
 
 
 
@@ -906,8 +909,8 @@ input[type="checkbox"]:checked~* .faq-item {
     color: transparent;
     justify-content: center;
     text-align: center;
-    margin: 10px;
-    font-size: 35px;
+    margin: 0.625rem;
+    font-size: 2.1875rem;
     background-image: linear-gradient(to left, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
     background-clip: text;
     animation: titleColor 10s linear infinite;
@@ -917,19 +920,19 @@ input[type="checkbox"]:checked~* .faq-item {
 
 .card {
     background: var(--color-white)fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 100%;
     background: repeating-linear-gradient(45deg,
             #8B4513,
-            #8B4513 10px,
-            #A0522D 30px,
-            #A0522D 20px);
+            #8B4513 0.625rem,
+            #A0522D 1.875rem,
+            #A0522D 1.25rem);
 }
 
 .card-header {
-    padding: 20px;
+    padding: 1.25rem;
     background: #4caf50;
     color: red;
     text-align: center;
@@ -937,23 +940,23 @@ input[type="checkbox"]:checked~* .faq-item {
     background:
         repeating-linear-gradient(-40deg,
             #6B8E23,
-            #6B8E23 10px,
-            #556B2F 10px,
-            #556B2F 20px);
+            #6B8E23 0.625rem,
+            #556B2F 0.625rem,
+            #556B2F 1.25rem);
 }
 
 .card-header h2 {
     position: relative;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.404);
-    border-radius: 6px;
+    border-radius: 0.375rem;
 }
 
 .card-body {
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
-    grid-template-rows: 500px 50px;
-    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    grid-template-rows: 31.25rem 3.125rem;
+    grid-template-columns: 1fr 1.875rem 1.875rem 1.875rem 1.875rem 1.875rem 1fr;
     align-items: center;
     justify-items: center;
 }
@@ -962,13 +965,13 @@ div#carousel#carousel {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
     width: 100%;
-    height: 500px;
+    height: 31.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     transform-style: preserve-3d;
-    perspective: 1000px;
+    perspective: 62.5rem;
     --items: 6;
     --middle: 3;
     --position: 1;
@@ -976,21 +979,21 @@ div#carousel#carousel {
 
 div.item {
     position: absolute;
-    width: 300px;
-    height: 400px;
+    width: 18.75rem;
+    height: 25rem;
     transition: all var(--animation-delay-05) ease-in-out;
     transform: var(--transform);
     z-index: var(--z-index);
-    border: 5px solid #4caf50;
+    border: 0.3125rem solid #4caf50;
     /* Green border */
-    border-radius: 15px;
+    border-radius: 0.9375rem;
 }
 
 div.item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 input[type="radio"] {
@@ -1051,7 +1054,7 @@ input:nth-of-type(1):checked~div#carousel#carousel div.item:nth-of-type(1) {
 }
 
 input:nth-of-type(1):checked~div#carousel#carousel div.item:nth-of-type(2) {
-    --transform: translateX(300px) scale(0.8);
+    --transform: translateX(18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1077,7 +1080,7 @@ input:nth-of-type(1):checked~div#carousel#carousel div.item:nth-of-type(6) {
 }
 
 input:nth-of-type(2):checked~div#carousel#carousel div.item:nth-of-type(1) {
-    --transform: translateX(-300px) scale(0.8);
+    --transform: translateX(-18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1087,7 +1090,7 @@ input:nth-of-type(2):checked~div#carousel#carousel div.item:nth-of-type(2) {
 }
 
 input:nth-of-type(2):checked~div#carousel#carousel div.item:nth-of-type(3) {
-    --transform: translateX(300px) scale(0.8);
+    --transform: translateX(18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1112,7 +1115,7 @@ input:nth-of-type(3):checked~div#carousel#carousel div.item:nth-of-type(1) {
 }
 
 input:nth-of-type(3):checked~div#carousel#carousel div.item:nth-of-type(2) {
-    --transform: translateX(-300px) scale(0.8);
+    --transform: translateX(-18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1122,7 +1125,7 @@ input:nth-of-type(3):checked~div#carousel#carousel div.item:nth-of-type(3) {
 }
 
 input:nth-of-type(3):checked~div#carousel#carousel div.item:nth-of-type(4) {
-    --transform: translateX(300px) scale(0.8);
+    --transform: translateX(18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1147,7 +1150,7 @@ input:nth-of-type(4):checked~div#carousel#carousel div.item:nth-of-type(2) {
 }
 
 input:nth-of-type(4):checked~div#carousel#carousel div.item:nth-of-type(3) {
-    --transform: translateX(-300px) scale(0.8);
+    --transform: translateX(-18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1157,7 +1160,7 @@ input:nth-of-type(4):checked~div#carousel#carousel div.item:nth-of-type(4) {
 }
 
 input:nth-of-type(4):checked~div#carousel#carousel div.item:nth-of-type(5) {
-    --transform: translateX(300px) scale(0.8);
+    --transform: translateX(18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1182,7 +1185,7 @@ input:nth-of-type(5):checked~div#carousel#carousel div.item:nth-of-type(3) {
 }
 
 input:nth-of-type(5):checked~div#carousel#carousel div.item:nth-of-type(4) {
-    --transform: translateX(-300px) scale(0.8);
+    --transform: translateX(-18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1192,7 +1195,7 @@ input:nth-of-type(5):checked~div#carousel#carousel div.item:nth-of-type(5) {
 }
 
 input:nth-of-type(5):checked~div#carousel#carousel div.item:nth-of-type(6) {
-    --transform: translateX(300px) scale(0.8);
+    --transform: translateX(18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1217,7 +1220,7 @@ input:nth-of-type(6):checked~div#carousel#carousel div.item:nth-of-type(4) {
 }
 
 input:nth-of-type(6):checked~div#carousel#carousel div.item:nth-of-type(5) {
-    --transform: translateX(-300px) scale(0.8);
+    --transform: translateX(-18.75rem) scale(0.8);
     --z-index: 1;
 }
 
@@ -1232,17 +1235,17 @@ input:nth-of-type(6):checked~div#carousel#carousel div.item:nth-of-type(6) {
     grid-column: 1 / 8;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .controls label {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     background-color: #4caf50;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 input[type="radio"]:checked+label {
@@ -1250,19 +1253,19 @@ input[type="radio"]:checked+label {
 }
 
 body {
-    height: 1000px;
+    height: 62.5rem;
 }
 
 .flower,
 .flower2,
 .flower3 {
     position: relative;
-    width: 100px;
-    height: 0px;
+    width: 6.25rem;
+    height: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -80px;
+    top: -5rem;
 }
 
 .flower2 {
@@ -1285,8 +1288,8 @@ body {
 
 .petal {
     position: absolute;
-    width: 30px;
-    height: 50px;
+    width: 1.875rem;
+    height: 3.125rem;
     background: pink;
     border-radius: 50% 50% 0 0;
     transform-origin: bottom center;
@@ -1295,41 +1298,41 @@ body {
 .petal:nth-child(1) {
     transform: rotate(0deg);
     top: 0;
-    left: 20px;
+    left: 1.25rem;
 }
 
 .petal:nth-child(2) {
     transform: rotate(72deg);
     top: 0;
-    left: 20px;
+    left: 1.25rem;
 }
 
 .petal:nth-child(3) {
     transform: rotate(144deg);
     top: 0;
-    left: 20px;
+    left: 1.25rem;
 }
 
 .petal:nth-child(4) {
     transform: rotate(216deg);
     top: 0;
-    left: 20px;
+    left: 1.25rem;
 }
 
 .petal:nth-child(5) {
     transform: rotate(288deg);
     top: 0;
-    left: 20px;
+    left: 1.25rem;
 }
 
 .center {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     background: var(--color-yellow);
     border-radius: 50%;
-    top: 50px;
-    left: -15px;
+    top: 3.125rem;
+    left: -0.9375rem;
 }
 
 
@@ -1345,13 +1348,13 @@ body {
     }
 
     .header .mobile-btn:checked~.menu {
-        height: 50px;
+        height: 3.125rem;
     }
 }
 
 @media (max-width: 56.25rem) {
     .header nav {
-        height: 50px;
+        height: 3.125rem;
     }
 
     .header nav * {
@@ -1367,37 +1370,39 @@ body {
     }
 
     .header .mobile-btn:checked~.menu ul {
-        margin-top: 30px;
+        margin-top: 1.875rem;
         transition: 0.3s;
     }
 }
 
-@media (max-width: 270px) {
+@media (max-width: 16.875rem) {
     #animation {
         display: none;
     }
+
     .controls {
-        gap: 4px;
+        gap: 0.25rem;
     }
+
     div#carousel#carousel {
-        height: 150px;
+        height: 9.375rem;
     }
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
     footer {
         flex-direction: column;
     }
 
     footer div:nth-child(2) {
-        border: 1px solid gray;
+        border: 0.0625rem solid gray;
         border-left: 0;
         border-right: 0;
     }
 
     footer div {
-        padding: 10px 10px;
+        padding: 0.625rem 0.625rem;
     }
 }
 
@@ -1411,21 +1416,21 @@ body {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 26.875rem) {
 
     .nuvem {
-        width: 224px;
-        height: 70px;
-        border-radius: 70px;
-        margin: 130px 0 0 12px;
+        width: 14rem;
+        height: 4.375rem;
+        border-radius: 4.375rem;
+        margin: 8.125rem 0 0 0.75rem;
     }
 
     .nuvem::before {
-        height: 77px;
-        width: 77px;
+        height: 4.8125rem;
+        width: 4.8125rem;
         border-radius: 50%;
-        box-shadow: 63px 0 0 21px white;
-        margin: 60px 0 0 12px;
+        box-shadow: 3.9375rem 0 0 1.3125rem white;
+        margin: 3.75rem 0 0 0.75rem;
     }
 
     #evolution table {
@@ -1433,33 +1438,33 @@ body {
     }
 
     #evolution table * {
-        padding: 1px;
+        padding: 0.0625rem;
 
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
     div.item {
         height: auto;
         width: calc(100vw - 50vw);
     }
 
     .card-body {
-        grid-template-rows: 200px 50px;
+        grid-template-rows: 12.5rem 3.125rem;
     }
 
     div#carousel#carousel {
-        height: 200px;
+        height: 12.5rem;
     }
 
     .title h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
     div.item {
         width: 85%;
     }
@@ -1469,7 +1474,7 @@ body {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 20rem) {
     div.item {
         width: calc(100vw - 50vw);
     }
@@ -1484,18 +1489,18 @@ body {
 
 
     .nuvem {
-        width: 157px;
-        height: 49px;
-        border-radius: 49px;
-        margin: 150px 0 0 46px;
+        width: 9.8125rem;
+        height: 3.0625rem;
+        border-radius: 3.0625rem;
+        margin: 9.375rem 0 0 2.875rem;
     }
 
     .nuvem::before {
-        height: 54px;
-        width: 54px;
+        height: 3.375rem;
+        width: 3.375rem;
         border-radius: 50%;
-        box-shadow: 44px 0 0 14px white;
-        margin: 80px 0 0 46px;
+        box-shadow: 2.75rem 0 0 0.875rem white;
+        margin: 5rem 0 0 2.875rem;
     }
 
     .gota2,
@@ -1504,17 +1509,17 @@ body {
     }
 
     .plant1 {
-        transform: translateX(-30px) rotate(-5deg);
+        transform: translateX(-1.875rem) rotate(-5deg);
     }
 
     .plant2 {
-        transform: translateX(30px) rotate(5deg);
+        transform: translateX(1.875rem) rotate(5deg);
     }
 
     .sun {
-        width: 60px;
-        height: 60px;
-        left: calc(50% - 30px);
+        width: 3.75rem;
+        height: 3.75rem;
+        left: calc(50% - 1.875rem);
     }
 }
 
@@ -1538,11 +1543,11 @@ body {
 
 @keyframes nascer {
     0% {
-        top: 140px;
+        top: 8.75rem;
     }
 
     100% {
-        top: 0px
+        top: 0rem
     }
 }
 
@@ -1552,11 +1557,11 @@ body {
     }
 
     99% {
-        transform: scale(0.3) translateY(1400px) rotate(45deg);
+        transform: scale(0.3) translateY(87.5rem) rotate(45deg);
     }
 
     100% {
-        transform: scale(0.3) translateY(1400px) rotate(45deg);
+        transform: scale(0.3) translateY(87.5rem) rotate(45deg);
     }
 }
 
@@ -1564,11 +1569,11 @@ body {
 
 
     70% {
-        transform: translateY(-260px) scale(1);
+        transform: translateY(-16.25rem) scale(1);
     }
 
     100% {
-        transform: translateY(300px) scale(0);
+        transform: translateY(18.75rem) scale(0);
     }
 }
 
@@ -1609,7 +1614,7 @@ body {
 
     80% {
         background: var(--color-yellow);
-        box-shadow: 0px 0px 20px var(--color-yellow);
+        box-shadow: 0rem 0rem 1.25rem var(--color-yellow);
     }
 
     100% {
@@ -1635,25 +1640,25 @@ body {
 
 @keyframes blossomingLeft {
     0% {
-        left: calc(50% - 5px);
-        transform: translateY(2px) translateX(-4px) rotate(-5deg);
+        left: calc(50% - 0.3125rem);
+        transform: translateY(0.125rem) translateX(-0.25rem) rotate(-5deg);
     }
 
     100% {
-        left: calc(50% - 5px);
-        transform: translateY(2px) translateY(4px) translateX(-10px) rotate(-30deg);
+        left: calc(50% - 0.3125rem);
+        transform: translateY(0.125rem) translateY(0.25rem) translateX(-0.625rem) rotate(-30deg);
     }
 }
 
 @keyframes blossomingRight {
     0% {
-        left: calc(50% - 5px);
-        transform: translateX(4px) rotate(5deg);
+        left: calc(50% - 0.3125rem);
+        transform: translateX(0.25rem) rotate(5deg);
     }
 
     100% {
-        left: calc(50% - 5px);
-        transform: translateY(3px) translateX(10px) rotate(30deg);
+        left: calc(50% - 0.3125rem);
+        transform: translateY(0.1875rem) translateX(0.625rem) rotate(30deg);
 
     }
 }
@@ -1661,11 +1666,11 @@ body {
 
 @keyframes sunRays {
     0% {
-        box-shadow: 0px 0px 20px var(--color-yellow);
+        box-shadow: 0rem 0rem 1.25rem var(--color-yellow);
     }
 
     100% {
-        box-shadow: 0px 0px 60px 30px var(--color-yellow);
+        box-shadow: 0rem 0rem 3.75rem 1.875rem var(--color-yellow);
     }
 }
 
@@ -1755,7 +1760,7 @@ body {
     0% {
         opacity: 0;
     }
-    
+
 
     100% {
         opacity: 1;
