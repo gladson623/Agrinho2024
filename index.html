@@ -1,467 +1,392 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
-     <style>
-        .text-changer{
-          min-height: 100px;
-          display: flex;
-          margin: 10px 0;
-        }
-        .text-changer::before{
-          content: '';
-          animation: changertxt 20s ease-in-out infinite;
-          color: black;
-          font-size: 25px;
-          margin: auto;
-        }
-        .sun {
-          width:100px;
-          height:100px;
-          background-color:yellow;
-          border-radius:50%;
-          box-shadow: 0px 0px 20px yellow;
-          position:relative;
-          left: calc(50% - 50px);
-          top: 100px;
-          transition: box-shadow 3s;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFuturo</title>
 
-        #seed:checked~* *.sun{
-          animation: sunRays 3s linear forwards;
-          animation-delay: 15s;
-        }
-        
-        .reset {
-          color: red;
-          cursor: pointer;
-          display: none;
-        }
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="imagens/logo.png" type="image/x-icon">
 
-        #seed:checked~* .reset{
-          display: flex;
-          justify-content: center;
-          background-color: yellowgreen;
-          font-size: 20px;
-          padding: 10px 0;
+</head>
 
-        }
-        @keyframes sunRays {
-          0%{
-            box-shadow: 0px 0px 20px yellow;
-          }
-          100%{ 
-            box-shadow: 0px 0px 60px 30px yellow;
-          }
-        }
+<body>
+  <header class="header">
 
-        @keyframes changertxt {
-    0% { content: 'Olá, seja bem vindo ao meu site.'; opacity: 0.3; }
-    10% { content: 'Olá, seja bem vindo ao meu site.'; opacity: 1; }
-    19% { content: 'Olá, seja bem vindo ao meu site.'; opacity: 0; }
-    20% { content: 'Explorando a tecnologia agrícola'; opacity: 0; }
-    30% { content: 'Explorando a tecnologia agrícola'; opacity: 1; }
-    39% { content: 'Explorando a tecnologia agrícola'; opacity: 0; }
-    40% { content: 'Do passado ao futuro'; opacity: 0; }
-    50% { content: 'Do passado ao futuro'; opacity: 1; }
-    59% { content: 'Do passado ao futuro'; opacity: 0; }
-    60% { content: 'Inovações que transformam'; opacity: 0; }
-    70% { content: 'Inovações que transformam'; opacity: 1; }
-    79% { content: 'Inovações que transformam'; opacity: 0; }
-    80% { content: 'A agricultura moderna'; opacity: 0; }
-    90% { content: 'A agricultura moderna'; opacity: 1; }
-    99% { content: 'A agricultura moderna'; opacity: 0; }
-    100% { content: 'Olá, seja bem vindo ao meu site.'; opacity: 0; }
-}
+    <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+    <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"><span class="hamburguerExpand"></span><span
+          class="hamburguer2"></span></label>
 
+    <nav class="menu">
 
-        /* ////////////////// */
+      <ul class="menu">
+        <li><a class="active" href="#inicio" title="Inicio">Inicio</a></li>
+        <li><a href="#history" title="História">História</a></li>
+        <li><a href="#animation" title="Animação">Animação</a></li>
+        <li><a href="#evolution" title="Evolução">Evolução</a></li>
+      </ul>
+    </nav>
 
-      #seed:checked~ * .thunder-container:nth-child(2) {
-        position: absolute;
-        top: 210px;
-        left: calc(50% - 60px) ;
-        
-      }
-     
-      #seed:checked~ * .thunder-container{
-        position: absolute;
-        top: 210px;
-        left: calc(50% - 5px);
-  
-      }
-      #seed:checked~ * .thunder-container .thunder1{
-        background: none;
-        width: 15px;
-        height: 30px;
-        position: relative;
-        left: 18px;
-        top: -5px;
-        transform: skew(-45deg);
-        animation: flash 3s linear forwards;
+  </header>
 
-      }
-      #seed:checked~ * .thunder-container .thunder2{
-        background: none;
-        width: 15px;
-        height: 40px;
-        position: relative;
-        top: -10px;
-        left: 2px;
-        transform: skew(-45deg);
-        animation: flash 3s linear forwards;
-      }
-      #seed:checked~ * .thunder-container * {
-        background: none;
-        animation-delay: 9s;
-        
-      }
-      #seed:checked~ * .thunder-container:nth-child(2) * {
-        background: none;
-        animation-delay: 3s;
-        
-      }
+  <main>
+    <input type="checkbox" id="darkModeCheckbox" class="switch-checkbox" />
+    <label class="check" for="darkModeCheckbox"></label>
+    <div>
+      <div class="dark-mode">
+        <section class="intro-section" id="inicio">
+          <div class="title">
+            <h1>Bem-vindo à Evolução da Tecnologia no Campo</h1>
+          </div>
+          <div class="text-changer">
 
-      
-      @keyframes flash{
-        0%{
-          background: none;
+          </div>
+          <p>Introdução à Evolução da Tecnologia no Campo</p>
+        </section>
 
-        }
-        75%{
-          background: none;
-          box-shadow: none;
-        }
-        80%{
-          background: yellow;
-          box-shadow: 0px 0px 20px yellow;
-        }
-        100%{
-          box-shadow: none;
-          
-          background: none;
-        }
-      }
-      
-     
-      .title h1{
-        margin: 0;
-        line-height: 1;
-        color: transparent;
-        justify-content: center;
-        text-align: center;
-        margin: 10px;
-        font-size: 35px;
-        background-image: linear-gradient(to left, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
-        background-clip: text;
-        animation: titleColor 10s linear infinite ;
-        background-size: 500%;
-      }
-      @keyframes titleColor {
-        0%{
-          background-position: 0 100%;
-        }
-        50%{
-          background-position: 100% 0;
-        }
-        100%{
-          background-position: 0 100%;
-        }
-      }
+        <section class="content-section" id=history>
+          <h2>História</h2>
+          <div class="content-grid">
+            <div class="content-item">
+              <h3>Revolução Agrícola</h3>
+              <p>
+                A Revolução Agrícola, iniciada no século 18, trouxe melhorias
+                significativas na produção de alimentos, através da rotação de
+                culturas e a utilização de máquinas simples.
+              </p>
+            </div>
+            <div class="content-item">
+              <h3>Mecanização</h3>
+              <p>
+                A introdução de tratores e colheitadeiras no início do século
+                20 aumentou drasticamente a eficiência agrícola e reduziu a
+                necessidade de mão-de-obra intensiva.
+              </p>
+            </div>
+            <div class="content-item">
+              <h3>Era Digital</h3>
+              <p>
+                Com o avanço da tecnologia digital, sensores, drones e big
+                data começaram a ser usados para monitorar e gerenciar
+                plantações com precisão.
+              </p>
+            </div>
+          </div>
+        </section>
 
-     </style>
-  </head>
-  <body>
-    <header class="header">
+        <section class="content-section " id="animation">
+          <h2>Animação</h2>
+          <input type="checkbox" id="seed" class="switch-checkbox" />
+          <label class="seed" for="seed">
+            <p>clique aqui para plantar</p>
+          </label>
+          <div><a class="reset" href="index.html">Clique aqui para reiniciar a animação</a></div>
+          <div class="animation-rain">
+            <div>
+              <div class="sun"></div>
+            </div>
 
-      <input class="mobile-btn" type="checkbox" id="mobile-btn" />
-      <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"><span class="hamburguerExpand"></span><span
-            class="hamburguer2"></span></label>
-      
-      <nav class="menu">
+            <div id="field-rain">
+              <div class="content-grid-animate"> <!--  //container -->
+                <div class="nuvem">
+                  <div class='thunder-container'>
+                    <div class='thunder1'></div>
+                    <div class='thunder2'></div>
+                    <div class='thunder3'></div>
+                  </div>
+                  <div class='thunder-container thunder-container2'>
+                    <div class='thunder1'></div>
+                    <div class='thunder2'></div>
+                    <div class='thunder3'></div>
+                  </div>
+                </div>
+                <div class="chuva">
+                  <span class="gota6"></span>
+                  <span class="gota1"></span>
+                  <span class="gota8"></span>
+                  <span class="gota2"></span>
+                  <span class="gota3"></span>
+                  <span class="gota8"></span>
+                  <span class="gota4"></span>
+                  <span class="gota5"></span>
+                  <span class="gota6"></span>
+                  <span class="gota7"></span>
+                  <span class="gota8"></span>
+                  <span class="gota2"></span>
+                </div>
+              </div>
+            </div>
 
-        <ul  class="menu">
-          <li><a class="active" href="#inicio" title="Inicio">Inicio</a></li>
+            <div class="glass"></div>
+            <div class="plant">
+              <div></div>
+            </div>
+            <div class="plant1">
+              <div></div>
+            </div>
+            <div class="plant2">
+              <div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery-section">
+          <div class="card">
+            <div class="card-header">
+              <h2>Galeria de Imagens</h2>
+              <div class="flower">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="center"></div>
+              </div>
+
+              <div class="flower2">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="center"></div>
+              </div>
+
+              <div class="flower3">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="center"></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <input type="radio" name="position" id="pos1" checked />
+              <input type="radio" name="position" id="pos2" />
+              <input type="radio" name="position" id="pos3" />
+              <input type="radio" name="position" id="pos4" />
+              <input type="radio" name="position" id="pos5" />
+              <input type="radio" name="position" id="pos6" />
+              <div id="carousel">
+                <div class="item gallery-grid"><a href="#modal1"><img src="./imagens/imagem1.png"
+                      alt="Plantação de cebolinha" /></a></div>
+                <div class="item gallery-grid"><a href="#modal3"><img src="./imagens/imagem3.png"
+                      alt="Arvore frutifera" /></a></div>
+                <div class="item gallery-grid"><a href="#modal2"><img src="./imagens/imagem8.png"
+                      alt="Plantação de alface" /></a></div>
+                <div class="item gallery-grid"><a href="#modal4"><img src="./imagens/imagem4.png" alt="Arvores" /></a>
+                </div>
+                <div class="item gallery-grid"><a href="#modal5"><img src="./imagens/imagem7.jpeg" alt="Arvores" /></a>
+                </div>
+                <div class="item gallery-grid"><a href="#modal6"><img src="./imagens/imagem7.jpeg" alt="Arvores" /></a>
+                </div>
+              </div>
+              <div class="controls">
+                <label for="pos1"></label>
+                <label for="pos2"></label>
+                <label for="pos3"></label>
+                <label for="pos4"></label>
+                <label for="pos5"></label>
+                <label for="pos6"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-modal">
+          <div id="modal1" class="modal">
+            <div class="modal_item">
+              <div>
+                <img src="./imagens/imagem1.png" alt="Plantação de cebolinha" />
+              </div>
+              <div>
+                <a href="#" class="close">Fechar</a>
+                <a href="#" class="back">Voltar</a>
+              </div>
+            </div>
+          </div>
+          <div id="modal2" class="modal">
+            <div class="modal_item">
+              <div>
+                <img src="./imagens/imagem8.png" alt="Plantação de alface" />
+              </div>
+              <div>
+                <a href="#" class="close">Fechar</a>
+                <a href="#" class="back">Voltar</a>
+              </div>
+            </div>
+          </div>
+          <div id="modal3" class="modal">
+            <div class="modal_item">
+              <div>
+                <img src="./imagens/imagem3.png" alt="Arvore frutifera" />
+              </div>
+              <div>
+                <a href="#" class="close">Fechar</a>
+                <a href="#" class="back">Voltar</a>
+              </div>
+            </div>
+          </div>
+          <div id="modal4" class="modal">
+            <div class="modal_item">
+              <div>
+                <img src="./imagens/imagem4.png" alt="Arvores" />
+              </div>
+              <div>
+                <a href="#" class="close">Fechar</a>
+                <a href="#" class="back">Voltar</a>
+              </div>
+            </div>
+          </div>
+          <div id="modal5" class="modal">
+            <div class="modal_item">
+              <div>
+                <img src="./imagens/imagem7.jpeg" alt="Arvores" />
+              </div>
+              <div>
+                <a href="#" class="close">Fechar</a>
+                <a href="#" class="back">Voltar</a>
+              </div>
+            </div>
+          </div>
+          <div id="modal6" class="modal">
+            <div class="modal_item">
+              <div>
+                <img src="./imagens/imagem6.jpeg" alt="Arvores" />
+              </div>
+              <div>
+                <a href="#" class="close">Fechar</a>
+                <a href="#" class="back">Voltar</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials-section">
+          <h2>Depoimentos</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-item">
+              <h3>João Silva</h3>
+              <p>
+                "A tecnologia transformou minha fazenda. A produtividade
+                aumentou e os custos diminuíram."
+              </p>
+            </div>
+            <div class="testimonial-item">
+              <h3>Maria Fernanda</h3>
+              <p>
+                "As inovações tecnológicas facilitaram muito a gestão
+                agrícola. Recomendo fortemente!"
+              </p>
+            </div>
+            <div class="testimonial-item">
+              <h3>Pedro Almeida</h3>
+              <p>
+                "O suporte dado pelas IA é excelente. Eles sempre ajudam com as
+                melhores soluções."
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing-section" id="evolution">
+          <h2>Dados sobre a Evolução da Tecnologia no Campo</h2>
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Ano</th>
+                <th>Inovação</th>
+                <th>Impacto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1790</td>
+                <td>Revolução Agrícola</td>
+                <td>
+                  Melhorias na rotação de culturas e uso de fertilizantes
+                </td>
+              </tr>
+              <tr>
+                <td>1900</td>
+                <td>Mecanização</td>
+                <td>Introdução de tratores e colheitadeiras</td>
+              </tr>
+              <tr>
+                <td>1990</td>
+                <td>Agricultura de Precisão</td>
+                <td>Uso de GPS e sensores para monitoramento de solo</td>
+              </tr>
+              <tr>
+                <td>2000</td>
+                <td>Biotecnologia</td>
+                <td>Desenvolvimento de culturas geneticamente modificadas</td>
+              </tr>
+              <tr>
+                <td>2010</td>
+                <td>Drones e Big Data</td>
+                <td>
+                  Monitoramento aéreo e análise de dados para gestão agrícola
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="faq-section">
+          <h2>Perguntas Frequentes (FAQs)</h2>
+          <div class="faq-item">
+            <h4>Como posso me inscrever?</h4>
+            <p>
+              Você pode se inscrever clicando no botão de inscrição e
+              preenchendo o formulário com suas informações.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Quais são as formas de pagamento aceitas?</h4>
+            <p>
+              Aceitamos pagamentos via cartão de crédito, boleto bancário e
+              transferência bancária.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4>Posso cancelar a qualquer momento?</h4>
+            <p>
+              Sim, você pode cancelar sua assinatura a qualquer momento
+              diretamente pela sua conta.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <p>
+        A evolução da tecnologia no campo tem sido um fator crucial para
+        aumentar a produtividade e a sustentabilidade agrícola.
+      </p>
+    </div>
+    <div>
+      <nav class="rodape">
+        <ul>
+          <li><a href="#inicio" title="Inicio">Inicio</a></li>
           <li><a href="#history" title="História">História</a></li>
           <li><a href="#animation" title="Animação">Animação</a></li>
-          <li><a href="#evolution" title="Evolução">Evolução</a></li>
+          <li><a class="active" href="#evolution" title="Evolução">Evolução</a></li>
         </ul>
       </nav>
-        
-    </header>
+    </div>
+    <div>
+      <p>&copy; 2024 AgroFuturo. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <span class="highlight" aria-label="foto de Gladson Coronado"><a
+            href="https://api.whatsapp.com/send?phone=5544991168932" target="_blank">Gladson
+            Coronado</a></span>
+      </p>
+    </div>
+  </footer>
+</body>
 
-    <main>
-      <input type="checkbox" id="darkModeCheckbox" class="switch-checkbox" />
-      <label class="check" for="darkModeCheckbox"></label>
-      <div>
-        <div class="dark-mode">
-          <section class="intro-section" id="Inicio">
-            <div class="title">
-              <h1>Bem-vindo à Evolução da Tecnologia no Campo</h1>
-            </div>
-            <div class="text-changer">
-              
-            </div>
-            <p>Introdução à Evolução da Tecnologia no Campo</p>
-          </section>
-
-          <section class="content-section" id=history>
-            <h2>História</h2>
-            <div class="content-grid">
-              <div class="content-item">
-                <h3>Revolução Agrícola</h3>
-                <p>
-                  A Revolução Agrícola, iniciada no século 18, trouxe melhorias
-                  significativas na produção de alimentos, através da rotação de
-                  culturas e a utilização de máquinas simples.
-                </p>
-              </div>
-              <div class="content-item">
-                <h3>Mecanização</h3>
-                <p>
-                  A introdução de tratores e colheitadeiras no início do século
-                  20 aumentou drasticamente a eficiência agrícola e reduziu a
-                  necessidade de mão-de-obra intensiva.
-                </p>
-              </div>
-              <div class="content-item">
-                <h3>Era Digital</h3>
-                <p>
-                  Com o avanço da tecnologia digital, sensores, drones e big
-                  data começaram a ser usados para monitorar e gerenciar
-                  plantações com precisão.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="content-section " id="animation">
-            <h2>Animação</h2>
-            <input type="checkbox" id="seed" class="switch-checkbox" />
-            <label class="seed" for="seed"> <p>clique aqui para plantar</p></label>
-            <div><a class="reset"  href="index.html">Clique aqui para reiniciar a animação</a></div>
-            <div class="animation-rain">
-              <div><div class="sun"></div></div>
-
-              <div id="field-rain">
-                <div class="content-grid-animate"> <!--  //container -->
-                  <div class="nuvem">
-                    <div class='thunder-container'>
-                      <div class='thunder1'></div>
-                      <div class='thunder2'></div>
-                      <div class='thunder3'></div>
-                    </div>
-                    <div class='thunder-container thunder-container2'>
-                      <div class='thunder1'></div>
-                      <div class='thunder2'></div>
-                      <div class='thunder3'></div>
-                    </div>
-                  </div>
-                  <div class="chuva">
-                    <span class="gota6"></span>
-                    <span class="gota1"></span>
-                    <span class="gota8"></span>
-                    <span class="gota2"></span>
-                    <span class="gota3"></span>
-                    <span class="gota8"></span>
-                    <span class="gota4"></span>
-                    <span class="gota5"></span>
-                    <span class="gota6"></span>
-                    <span class="gota7"></span>
-                    <span class="gota8"></span>
-                    <span class="gota2"></span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="glass"></div>
-              <div class="plant"><div></div></div>
-              <div class="plant1"><div></div></div>
-              <div class="plant2"><div></div></div>
-            </div>
-          </section>
-
-          <section class="gallery-section">
-            <h2>Galeria de Imagens</h2>
-            <div class="gallery-grid">
-              <a href="#modal1"><img src="./imagens/imagem1.png" alt="Plantação de cebolinha" /></a>
-              <a href="#modal2"><img src="./imagens/imagem8.png" alt="Plantação de alface" /></a>
-              <a href="#modal3"><img src="./imagens/imagem3.png" alt="Arvore frutifera" /></a>
-              <a href="#modal4"><img src="./imagens/imagem4.png" alt="Arvores"/></a>
-            </div>
-          </section>
-          <section class="section-modal">
-            <div id="modal1" class="modal">
-              <div class="modal_item">
-                <div>
-                  <img src="./imagens/imagem1.png" alt="Plantação de cebolinha" />
-                </div>
-                <div>
-                  <a href="#" class="close">Fechar</a>
-                  <a href="#" class="back">Voltar</a>
-                </div>
-              </div>
-            </div>
-            <div id="modal2" class="modal">
-              <div class="modal_item">
-                <div>
-                  <img src="./imagens/imagem8.png" alt="Plantação de cebolinha" />
-                </div>
-                <div>
-                  <a href="#" class="close">Fechar</a>
-                  <a href="#" class="back">Voltar</a>
-                </div>
-              </div>
-            </div>
-            <div id="modal3" class="modal">
-              <div class="modal_item">
-                <div>
-                  <img src="./imagens/imagem3.png" alt="Plantação de cebolinha" />
-                </div>
-                <div>
-                  <a href="#" class="close">Fechar</a>
-                  <a href="#" class="back">Voltar</a>
-                </div>
-              </div>
-            </div>
-            <div id="modal4" class="modal">
-              <div class="modal_item">
-                <div>
-                  <img src="./imagens/imagem4.png" alt="Plantação de cebolinha" />
-                </div>
-                <div>
-                  <a href="#" class="close">Fechar</a>
-                  <a href="#" class="back">Voltar</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="testimonials-section">
-            <h2>Depoimentos</h2>
-            <div class="testimonials-grid">
-              <div class="testimonial-item">
-                <h3>João Silva</h3>
-                <p>
-                  "A tecnologia transformou minha fazenda. A produtividade
-                  aumentou e os custos diminuíram."
-                </p>
-              </div>
-              <div class="testimonial-item">
-                <h3>Maria Fernanda</h3>
-                <p>
-                  "As inovações tecnológicas facilitaram muito a gestão
-                  agrícola. Recomendo fortemente!"
-                </p>
-              </div>
-              <div class="testimonial-item">
-                <h3>Pedro Almeida</h3>
-                <p>
-                  "O suporte dado pelas IA é excelente. Eles sempre ajudam com as
-                  melhores soluções."
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="pricing-section" id="evolution">
-            <h2>Dados sobre a Evolução da Tecnologia no Campo</h2>
-            <table class="pricing-table">
-              <thead>
-                <tr>
-                  <th>Ano</th>
-                  <th>Inovação</th>
-                  <th>Impacto</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1790</td>
-                  <td>Revolução Agrícola</td>
-                  <td>
-                    Melhorias na rotação de culturas e uso de fertilizantes
-                  </td>
-                </tr>
-                <tr>
-                  <td>1900</td>
-                  <td>Mecanização</td>
-                  <td>Introdução de tratores e colheitadeiras</td>
-                </tr>
-                <tr>
-                  <td>1990</td>
-                  <td>Agricultura de Precisão</td>
-                  <td>Uso de GPS e sensores para monitoramento de solo</td>
-                </tr>
-                <tr>
-                  <td>2000</td>
-                  <td>Biotecnologia</td>
-                  <td>Desenvolvimento de culturas geneticamente modificadas</td>
-                </tr>
-                <tr>
-                  <td>2010</td>
-                  <td>Drones e Big Data</td>
-                  <td>
-                    Monitoramento aéreo e análise de dados para gestão agrícola
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section class="faq-section">
-            <h2>Perguntas Frequentes (FAQs)</h2>
-            <div class="faq-item">
-              <h4>Como posso me inscrever?</h4>
-              <p>
-                Você pode se inscrever clicando no botão de inscrição e
-                preenchendo o formulário com suas informações.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h4>Quais são as formas de pagamento aceitas?</h4>
-              <p>
-                Aceitamos pagamentos via cartão de crédito, boleto bancário e
-                transferência bancária.
-              </p>
-            </div>
-            <div class="faq-item">
-              <h4>Posso cancelar a qualquer momento?</h4>
-              <p>
-                Sim, você pode cancelar sua assinatura a qualquer momento
-                diretamente pela sua conta.
-              </p>
-            </div>
-          </section>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div>
-        <p>
-          A evolução da tecnologia no campo tem sido um fator crucial para
-          aumentar a produtividade e a sustentabilidade agrícola.
-        </p>
-      </div>
-      <div>
-        <nav class="rodape">
-          <ul>
-            <li><a  href="./index.html">Home</a></li>
-            <li><a href="#history">História</a></li>
-            <li><a href="#evolution">Inovações</a></li>
-            <li><a class="active" href="#future">Futuro</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <p>
-          © 2024 Evolução da Tecnologia no Campo. Todos os direitos reservados.
-        </p>
-      </div>
-    </footer>
-  </body>
 </html>
