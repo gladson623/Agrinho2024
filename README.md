@@ -41,7 +41,7 @@ O **footer** é a seção inferior do site que inclui:
 - **nav.rodape**: Menu de navegação com links para as seções principais.
 - **Informações de direitos autorais e créditos**: Inclui o nome do desenvolvedor e um link para mais informações.
 
-O footer está presente em todas as páginas, garantindo acesso rápido a informações e navegação.
+O footer contém o nome do criador do site e do professor responsável. Ao passar o mouse sobre os nomes, um efeito hover é exibido, mostrando suas respectivas fotos. Ao clicar nas fotos, o usuário será direcionado diretamente para seus números de WhatsApp.
 
 ## Responsividade
 
@@ -63,7 +63,8 @@ Certifique-se de manter seu navegador atualizado para garantir o melhor desempen
 
 Para visualizar o site, basta acessar o seguinte link:
 
-[Site AgroFuturo](https://gladson623.github.io/Agrinho2024/)
+github: [Site AgroFuturo](https://gladson623.github.io/Agrinho2024/)
+vercel: [Site AgroFuturo](https://agrinho2024-lilac.vercel.app/)
 
 Navegue pelas diferentes seções para explorar o conteúdo sobre a evolução da tecnologia no campo.
 
