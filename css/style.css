@@ -1823,7 +1823,7 @@ body {
         content: 'Aguarde 2 segundos';
     }
     80%{
-        content: 'Aguarde 1 segundos';
+        content: 'Aguarde 1 segundo';
     }
     100%{
         content: 'Iniciando o site';
