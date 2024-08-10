@@ -16,7 +16,7 @@ html,
 body {
     scroll-behavior: smooth;
     animation-name: fade-in;
-    animation-duration: 2s;
+    animation-duration: 0.1s;
     animation-fill-mode: both;
     animation-delay: var(--animation-delay-05);
 }
@@ -26,6 +26,38 @@ body {
     padding: 0;
     transition: var(--transition-default);
     font-family: var(--font-default);
+}
+
+#intro{
+    
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1a9901;
+    z-index: 10;
+    animation: opening 1s linear forwards;
+    animation-delay: 5s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#intro h1 {
+    margin: 0;
+    line-height: 1;
+    color: transparent;
+    justify-content: center;
+    text-align: center;
+    margin: 0.625rem;
+    font-size: 2.1875rem;
+    background-image: linear-gradient(to left, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    background-clip: text;
+    animation: titleColor 5s linear infinite;
+    background-size: 500%;
+    padding-bottom: 0.625rem;
 }
 
 a {
@@ -920,7 +952,7 @@ input[type="checkbox"]:checked~* .faq-item {
 
 
 .card {
-    background: var(--color-white)fff;
+    background: var(--color-white);
     border-radius: 0.9375rem;
     box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -1463,6 +1495,9 @@ body {
     .title h1 {
         font-size: 1.25rem;
     }
+    #intro h1 {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 25rem) {
@@ -1521,6 +1556,9 @@ body {
         width: 3.75rem;
         height: 3.75rem;
         left: calc(50% - 1.875rem);
+    }
+    #intro h1{
+        font-size: 0.9rem;
     }
 }
 
@@ -1765,5 +1803,23 @@ body {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes opening {
+    0% {
+        height: 100vh;
+        top: 0;
+    }
+
+    99% {
+        height: 0vh;
+        top: 0;
+    }
+
+    100% {
+        top: -50px;
+        height: 0vh;
+        display: none;
     }
 }

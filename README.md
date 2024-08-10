@@ -16,7 +16,7 @@ O site é organizado da seguinte maneira:
 
 - **Animação**: Seção interativa que permite aos usuários experimentar uma animação de plantio. Inclui um checkbox para iniciar a animação e efeitos visuais representando chuva e crescimento de plantas.
 
-- **Galeria de Imagens**: Seção que exibe uma galeria de imagens com um carrossel interativo. Inclui modais para visualização ampliada das imagens.
+- **Galeria de Imagens**: Seção que exibe uma galeria de imagens com um carrossel interativo. Inclui modais para visualização ampliada das imagens. Para trocar entre as imagens, clique nos botões abaixo da imagem.
 
 - **Depoimentos**: Seção que apresenta depoimentos de usuários sobre como a tecnologia transformou suas práticas agrícolas. Inclui uma grid de depoimentos com feedback positivo.
 
