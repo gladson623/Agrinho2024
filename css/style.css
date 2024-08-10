@@ -798,9 +798,6 @@ input[type="checkbox"]:checked~* .faq-item {
 
 }
 
-
-/* ////////////////// */
-
 #seed:checked~* .thunder-container:nth-child(2) {
     position: absolute;
     top: 13.125rem;
@@ -1006,7 +1003,6 @@ div.item {
     transform: var(--transform);
     z-index: var(--z-index);
     border: 0.3125rem solid #4caf50;
-    /* Green border */
     border-radius: 0.9375rem;
 }
 
@@ -1828,7 +1824,7 @@ body {
     }
 
     100% {
-        top: -50px;
+        top: -3.125rem;
         height: 0vh;
         display: none;
     }
