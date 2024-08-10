@@ -15,10 +15,7 @@
 html,
 body {
     scroll-behavior: smooth;
-    animation-name: fade-in;
-    animation-duration: 0.1s;
-    animation-fill-mode: both;
-    animation-delay: var(--animation-delay-05);
+    
 }
 
 * {
@@ -58,6 +55,12 @@ body {
     animation: titleColor 5s linear infinite;
     background-size: 500%;
     padding-bottom: 0.625rem;
+}
+
+#intro div::before {
+    content: 'Aguarde 5 segundos';
+    animation: count 5s linear forwards;
+    color: red;
 }
 
 a {
@@ -1804,6 +1807,28 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+@keyframes count {
+    0%{
+        content: 'Aguarde 5 segundos';
+    }
+    20%{
+        content: 'Aguarde 4 segundos';
+    }
+    40%{
+        content: 'Aguarde 3 segundos';
+    }
+    60%{
+        content: 'Aguarde 2 segundos';
+    }
+    80%{
+        content: 'Aguarde 1 segundos';
+    }
+    100%{
+        content: 'Iniciando o site';
+    }
+
 }
 
 @keyframes opening {
