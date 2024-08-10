@@ -399,23 +399,8 @@ input[type="checkbox"]:checked~.check {
 }
 
 input[type="checkbox"]:checked~.check::before {
-    transform: translateX(-3.125rem);
-}
-
-.check::after {
-    content: "";
-    position: absolute;
-    top: 0.1875rem;
-    left: 0.1875rem;
-    background: #181818;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    transform: translateX(-3.125rem);
-}
-
-input[type="checkbox"]:checked~.check::after {
-    transform: translateX(0rem);
+    transform: translateX(1.96rem);
+    background: #181818;;
 }
 
 input[type="checkbox"]:checked~* .pricing-table * th {
